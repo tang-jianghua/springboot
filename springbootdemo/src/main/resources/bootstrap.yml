@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: spring-boot # 和git里的文件名对应
+  cloud:
+    config:
+      label: master  # 远程仓库的分支
+      profile: test  # 和git里的文件名对应  dev 开发环境配置文件 |  test 测试环境  |  pro 正式环境
+      uri: http://192.168.1.288:8080/   # 指明配置服务中心的网址
+    bus:
+      trace:
+        enabled: true # 开启消息跟踪
+
+  #####################################################################################################
+  # rabbitmq 配置：
+  rabbitmq:
+    host: 192.168.1.288 # 登录 Rabbitmq 后台管理页面地址为：http://192.168.1.288:15672
+    port: 5672
+    username:    # 默认账户
+    password:    # 默认密码
+  ####################################################################################################
+
+management:
+  security:
+    enabled: false  # 刷新时，关闭安全验证

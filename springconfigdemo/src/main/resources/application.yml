@@ -1,0 +1,20 @@
+server:
+  port: 8080  #服务端口
+
+spring:
+  application:
+    name: configServer #服务名称
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/code-fighter-T/config-properties.git #服务的git仓库地址
+          search-paths: /**  #配置文件所在的目录
+      label: master  #配置文件所在的分支
+      username: code-fighter-T  #git仓库的用户名
+      password: tjh920324  #git仓库的密码
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761  #服务注册中心
