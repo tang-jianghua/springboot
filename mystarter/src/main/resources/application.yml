@@ -1,0 +1,8 @@
+thread:
+  pool:
+    timeUnit: seconds
+    corePoolSize: 2
+    keepAliveTime: 10
+    maximumPoolSize: 5
+    maxWait: 100
+    threadNamePrefix: 测试线程池--

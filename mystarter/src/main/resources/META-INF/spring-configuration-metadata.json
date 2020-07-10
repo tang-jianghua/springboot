@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "thread.pool",
+      "type": "com.tangjianghua.threadpool.CustomerThreadPoolInitializer",
+      "sourceType": "com.tangjianghua.threadpool.CustomerThreadPoolInitializer"
+    }
+  ],
+  "properties": [{
+    "name": "thread.pool.corePoolSize",
+    "type": "java.lang.Integer",
+    "sourceType": "com.tangjianghua.threadpool.CustomerThreadPoolInitializer",
+    "description": "核心线程数"
+  },{
+    "name": "thread.pool.maximumPoolSize",
+    "type": "java.lang.Integer",
+    "sourceType": "com.tangjianghua.threadpool.CustomerThreadPoolInitializer",
+    "description": "最大活跃线程数"
+  },{
+    "name": "thread.pool.keepAliveTime",
+    "type": "java.lang.Long",
+    "sourceType": "com.tangjianghua.threadpool.CustomerThreadPoolInitializer",
+    "description": "非核心线程的空闲超时时间"
+  },{
+    "name": "thread.pool.maxWait",
+    "type": "java.lang.Integer",
+    "sourceType": "com.tangjianghua.threadpool.CustomerThreadPoolInitializer",
+    "description": "等待分配线程的任务队列大小"
+  },{
+    "name": "thread.pool.threadNamePrefix",
+    "type": "java.lang.String",
+    "sourceType": "com.tangjianghua.threadpool.CustomerThreadPoolInitializer",
+    "description": "线程前缀"
+  },{
+    "name": "thread.pool.timeUnit",
+    "type": "java.util.concurrent.TimeUnit",
+    "sourceType": "com.tangjianghua.threadpool.CustomerThreadPoolInitializer",
+    "description": "超时时间单位"
+  }
+  ],
+  "hints": []
+}
